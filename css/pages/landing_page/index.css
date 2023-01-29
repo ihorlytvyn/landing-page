@@ -1,0 +1,10 @@
+@import "hero.css";
+@import "rectangle.css";
+@import "main-block.css";
+@import "features.css";
+@import "subscription.css";
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}

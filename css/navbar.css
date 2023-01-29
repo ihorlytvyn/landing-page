@@ -1,0 +1,130 @@
+.navbar-wrapper{
+  position: relative;
+  z-index: 10;  
+}
+.navbar-mobile{
+  display: none;  
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 27px 32px 100px;    
+}
+.navbar-menu{
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+.navbar-menu-item{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.navbar-menu-item:hover{
+  text-decoration: underline;
+}
+.navbar-menu-burger{
+  position: relative;
+  opacity: 0;
+  width: 24px;
+  height: 16px; 
+}
+@media (max-width:1200px) {
+  .navbar{
+    padding: 32px 27px;  
+  }
+  .navbar-menu-item{
+    display: none;
+  }
+  .navbar-mobile{
+    background: #ffffff;
+    position: fixed;
+    padding-top: 151px;  
+    width: 100%;
+    height: 100%;  
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 0;
+    display: none;   
+  }
+  .navbar-mobile.opened{
+    display: block;
+  }
+  .navbar-menu-burger{
+    opacity: 1;
+    width: 24px;
+    height: 16px;
+    z-index: 20;
+    position: fixed;
+    right: 27px;
+    cursor: pointer;     
+  }
+  .navbar-logo{
+    z-index: 20;
+    position: fixed;
+  }
+  .navbar-menu-burger-item{
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 1.5px;
+    top: 8px;    
+  }
+  .navbar-menu-burger::before,
+  .navbar-menu-burger::after{
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+  }
+  .navbar-menu-burger::before{
+    top: 0;
+  }
+  .navbar-menu-burger::after{
+    bottom: 0;
+  }
+  .navbar-menu-burger.opened span {
+    display: none;
+  }
+  .navbar-menu-burger.opened::before{
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-menu-burger.opened::after{
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .navbar-mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+    margin-bottom: 186px;
+  }
+  .navbar-mobile-menu-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .navbar-mobile-menu-item:hover{
+    text-decoration: underline;
+  }    
+  .mobile-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 36px;
+  }
+  .navbar::before{
+    content:"";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    background: #ffffff;
+    z-index: 15;    
+  }
+}
+  

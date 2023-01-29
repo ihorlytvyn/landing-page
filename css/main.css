@@ -1,0 +1,8 @@
+@import "fonts.css";
+@import "reset.css";
+@import "navbar.css";
+@import "footer.css";
+.container {
+  max-width: 1440px;
+  margin: 0 auto;  
+}

@@ -1,0 +1,31 @@
+.rectangle{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  padding: 120px;
+  background: #000000;
+  color: #FFFFFF;
+}
+.rectangle-title{
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 62px;
+  text-align: center;
+}
+.rectangle-info{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (max-width:1200px){
+  .rectangle-title{
+    font-size: 40px;
+    line-height: 40px;
+ }
+}
